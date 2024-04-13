@@ -1,0 +1,55 @@
+:root {
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body > .choice-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 20%;
+}
+
+body > .choice-container > div {
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+body > .choice-container > div:hover {
+  transform: scale(1.1);
+}
+
+body > .scores {
+  display: flex;
+  justify-content: space-around;
+}
+
+body > .scores > .your-score > .rock,
+body > .scores > .your-score > .paper,
+body > .scores > .your-score > .sizer,
+body > .scores > .computer-score > .rock,
+body > .scores > .computer-score > .paper,
+body > .scores > .computer-score > .sizer {
+  font-size: 3rem;
+  width: fit-content;
+}
+
+body > .scores > .your-score > .rock,
+body > .scores > .your-score > .paper,
+body > .scores > .your-score > .sizer {
+  transform: rotate(-90deg) scaleY(-1);
+}
+
+body > .scores > .computer-score > .rock,
+body > .scores > .computer-score > .paper,
+body > .scores > .computer-score > .sizer {
+  transform: rotate(-90deg);
+}
